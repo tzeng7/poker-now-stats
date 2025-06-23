@@ -11,7 +11,7 @@
             if (!file) {
                 return;
             }
-            const formData = FormData();
+            const formData = new FormData();
             formData.append("file", file);
 
             try {
