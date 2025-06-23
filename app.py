@@ -30,39 +30,58 @@ def process_csv(file):
             # close hand
         elif "-- ending" in row:
             game.hands.append(hand)
-        elif pf and "calls" in row:
+                
+        elif "posts a small blind" in row or "posts a big blind" in row:
+            index = row.index("@")
+            player_name = row[0:index].strip().strip('"')
+            hand.add_player(player_name, False, False)
 
+        elif pf and "calls" in row:
             #create method for retrieving player name from row
             index = row.index("@")
             player_name = row[0:index].strip().strip('"')
 
+            #add if new player calls blinds or open raise - vpip true
             if not hand.player_in_hand(player_name):
-                hand.players[player_name] = Player(player_name, True, False)
+                hand.add_player(player_name, True, False)
+                    
+            #add if player already registered calls blinds or new action - vpip true
+            else:
+                hand.update_player(player_name, True, False)
 
         elif pf and "raises" in row:
 
             index = row.index("@")
             player_name = row[0:index].strip().strip('"')
+                
+            #check if 3bet
             if raises_pre == 1:
+                    
                 if hand.player_in_hand(player_name):
                     hand.update_player(player_name, True, True)
                 else:
                     hand.add_player(player_name, True, True)
-            if not raises_pre and not hand.player_in_hand(player_name):
-                hand.add_player(player_name, True, False)
+                
+            #add if open and vpip
             elif not raises_pre and not hand.player_in_hand(player_name):
-                hand.add_player(player_name, True, True)
+                hand.add_player(player_name, True, False)
+                
+            #add if player open raises and was not registered in the hand yet
+            elif not raises_pre and hand.player_in_hand(player_name):
+                hand.update_player(player_name, True, False)
+                    
             raises_pre += 1
         elif pf and "folds" in row:
             index = row.index("@")
             player_name = row[0:index].strip().strip('"')
+                
+            #add if player not registered folds; do nothing if player was registered and folds
             if not hand.player_in_hand(player_name):
-                hand.players[player_name] = Player(player_name, False, False)
+                hand.add_player(player_name, False, False)
             # end preflop stat collection
         elif "Flop" in row:
             pf = False
 
-        # print(game.show_hands())
 
     totals = defaultdict(lambda: {
         'hands_played': 0,
@@ -78,10 +97,11 @@ def process_csv(file):
             if player.three_bet:
                 totals[player.player_name]['three_bet_count'] += 1
 
-    print(totals)
+    # print(game.show_hands())
+
     return totals
 
-
+# process_csv("poker_now_log_pglmlSXLmlxF48qixjvjgTcfa.csv")
 
 app = Flask(__name__)
 CORS(app)

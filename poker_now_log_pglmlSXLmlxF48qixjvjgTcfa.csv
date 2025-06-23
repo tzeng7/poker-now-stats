@@ -1,0 +1,72 @@
+entry,at,order
+"""tz @ bcdGuthcbe"" posts a big blind of 0.20",2025-06-20T23:18:01.565Z,175046148156505
+"""tz2 @ jinnkMiEa5"" posts a small blind of 0.10",2025-06-20T23:18:01.565Z,175046148156504
+"Your hand is 3♥, 9♣",2025-06-20T23:18:01.565Z,175046148156502
+"Player stacks: #1 ""tz @ bcdGuthcbe"" (24.50) | #5 ""tz2 @ jinnkMiEa5"" (15.50)",2025-06-20T23:18:01.565Z,175046148156501
+"-- starting hand #5 (id: 4a4cmyf35tjg)  (No Limit Texas Hold'em) (dealer: ""tz2 @ jinnkMiEa5"") --",2025-06-20T23:18:01.565Z,175046148156500
+"-- ending hand #4 --",2025-06-20T23:17:58.647Z,175046147864702
+"""tz2 @ jinnkMiEa5"" collected 0.20 from pot",2025-06-20T23:17:58.647Z,175046147864701
+"Uncalled bet of 0.10 returned to ""tz2 @ jinnkMiEa5""",2025-06-20T23:17:58.647Z,175046147864700
+"""tz @ bcdGuthcbe"" folds",2025-06-20T23:17:57.837Z,175046147783700
+"""tz2 @ jinnkMiEa5"" posts a big blind of 0.20",2025-06-20T23:17:43.524Z,175046146352405
+"""tz @ bcdGuthcbe"" posts a small blind of 0.10",2025-06-20T23:17:43.524Z,175046146352404
+"Your hand is 2♥, 7♠",2025-06-20T23:17:43.524Z,175046146352402
+"Player stacks: #1 ""tz @ bcdGuthcbe"" (24.60) | #5 ""tz2 @ jinnkMiEa5"" (15.40)",2025-06-20T23:17:43.524Z,175046146352401
+"-- starting hand #4 (id: ju2ntn4akqoo)  (No Limit Texas Hold'em) (dealer: ""tz @ bcdGuthcbe"") --",2025-06-20T23:17:43.524Z,175046146352400
+"-- ending hand #3 --",2025-06-20T23:17:37.520Z,175046145752002
+"""tz @ bcdGuthcbe"" collected 5.40 from pot with Pair, K's (combination: K♦, K♣, Q♦, J♦, 5♠)",2025-06-20T23:17:37.520Z,175046145752001
+"""tz @ bcdGuthcbe"" shows a K♦, Q♦.",2025-06-20T23:17:37.520Z,175046145752000
+"""tz2 @ jinnkMiEa5"" calls 1.20",2025-06-20T23:17:36.717Z,175046145671700
+"""tz @ bcdGuthcbe"" bets 1.20",2025-06-20T23:17:31.117Z,175046145111700
+"River: 2♠, 4♥, 5♠, K♣ [J♦]",2025-06-20T23:17:27.620Z,175046144762000
+"""tz2 @ jinnkMiEa5"" checks",2025-06-20T23:17:26.816Z,175046144681600
+"""tz @ bcdGuthcbe"" checks",2025-06-20T23:17:24.231Z,175046144423100
+"Turn: 2♠, 4♥, 5♠ [K♣]",2025-06-20T23:17:22.106Z,175046144210600
+"""tz2 @ jinnkMiEa5"" checks",2025-06-20T23:17:21.285Z,175046144128500
+"""tz @ bcdGuthcbe"" checks",2025-06-20T23:17:19.542Z,175046143954200
+"Flop:  [2♠, 4♥, 5♠]",2025-06-20T23:17:15.053Z,175046143505300
+"""tz2 @ jinnkMiEa5"" calls 1.50",2025-06-20T23:17:14.221Z,175046143422100
+"""tz @ bcdGuthcbe"" raises to 1.50",2025-06-20T23:17:13.162Z,175046143316200
+"""tz2 @ jinnkMiEa5"" raises to 0.60",2025-06-20T23:17:09.039Z,175046142903900
+"""tz @ bcdGuthcbe"" posts a big blind of 0.20",2025-06-20T23:17:06.003Z,175046142600305
+"""tz2 @ jinnkMiEa5"" posts a small blind of 0.10",2025-06-20T23:17:06.003Z,175046142600304
+"Your hand is K♦, Q♦",2025-06-20T23:17:06.003Z,175046142600302
+"Player stacks: #1 ""tz @ bcdGuthcbe"" (21.90) | #5 ""tz2 @ jinnkMiEa5"" (18.10)",2025-06-20T23:17:06.003Z,175046142600301
+"-- starting hand #3 (id: cg9gk7n05rar)  (No Limit Texas Hold'em) (dealer: ""tz2 @ jinnkMiEa5"") --",2025-06-20T23:17:06.003Z,175046142600300
+"Undealt cards:  [6♥, 5♠, 4♥, 5♣, K♦]",2025-06-20T23:17:05.509Z,175046142550900
+"-- ending hand #2 --",2025-06-20T23:17:00.060Z,175046142006002
+"""tz2 @ jinnkMiEa5"" collected 0.20 from pot",2025-06-20T23:17:00.060Z,175046142006001
+"Uncalled bet of 0.10 returned to ""tz2 @ jinnkMiEa5""",2025-06-20T23:17:00.060Z,175046142006000
+"""tz @ bcdGuthcbe"" folds",2025-06-20T23:16:59.210Z,175046141921000
+"""tz2 @ jinnkMiEa5"" posts a big blind of 0.20",2025-06-20T23:16:54.485Z,175046141448505
+"""tz @ bcdGuthcbe"" posts a small blind of 0.10",2025-06-20T23:16:54.485Z,175046141448504
+"Your hand is 5♦, Q♥",2025-06-20T23:16:54.485Z,175046141448502
+"Player stacks: #1 ""tz @ bcdGuthcbe"" (22.00) | #5 ""tz2 @ jinnkMiEa5"" (18.00)",2025-06-20T23:16:54.485Z,175046141448501
+"-- starting hand #2 (id: hqy8plzjr38s)  (No Limit Texas Hold'em) (dealer: ""tz @ bcdGuthcbe"") --",2025-06-20T23:16:54.485Z,175046141448500
+"-- ending hand #1 --",2025-06-20T23:16:51.563Z,175046141156302
+"""tz @ bcdGuthcbe"" collected 4.00 from pot",2025-06-20T23:16:51.563Z,175046141156301
+"Uncalled bet of 5.60 returned to ""tz @ bcdGuthcbe""",2025-06-20T23:16:51.563Z,175046141156300
+"""tz2 @ jinnkMiEa5"" folds",2025-06-20T23:16:50.756Z,175046141075600
+"""tz @ bcdGuthcbe"" bets 5.60",2025-06-20T23:16:45.689Z,175046140568900
+"River: 6♠, K♣, 2♠, 9♥ [6♦]",2025-06-20T23:16:39.469Z,175046139946900
+"""tz @ bcdGuthcbe"" calls 0.20",2025-06-20T23:16:38.657Z,175046139865700
+"""tz2 @ jinnkMiEa5"" bets 0.20",2025-06-20T23:16:35.914Z,175046139591400
+"""tz @ bcdGuthcbe"" checks",2025-06-20T23:16:31.800Z,175046139180000
+"Turn: 6♠, K♣, 2♠ [9♥]",2025-06-20T23:16:27.663Z,175046138766300
+"""tz @ bcdGuthcbe"" calls 1.20",2025-06-20T23:16:26.837Z,175046138683700
+"""tz2 @ jinnkMiEa5"" bets 1.20",2025-06-20T23:16:25.504Z,175046138550400
+"""tz @ bcdGuthcbe"" checks",2025-06-20T23:16:22.318Z,175046138231800
+"Flop:  [6♠, K♣, 2♠]",2025-06-20T23:16:17.330Z,175046137733000
+"""tz @ bcdGuthcbe"" calls 0.60",2025-06-20T23:16:16.519Z,175046137651900
+"""tz2 @ jinnkMiEa5"" raises to 0.60",2025-06-20T23:16:11.868Z,175046137186800
+"""tz @ bcdGuthcbe"" posts a big blind of 0.20",2025-06-20T23:16:07.676Z,175046136767607
+"""tz2 @ jinnkMiEa5"" posts a small blind of 0.10",2025-06-20T23:16:07.676Z,175046136767606
+"Your hand is 2♦, 6♥",2025-06-20T23:16:07.676Z,175046136767604
+"Player stacks: #1 ""tz @ bcdGuthcbe"" (20.00) | #5 ""tz2 @ jinnkMiEa5"" (20.00)",2025-06-20T23:16:07.676Z,175046136767603
+"The player ""tz2 @ jinnkMiEa5"" joined the game with a stack of 20.00.",2025-06-20T23:16:07.676Z,175046136767602
+"The player ""tz @ bcdGuthcbe"" joined the game with a stack of 20.00.",2025-06-20T23:16:07.676Z,175046136767601
+"-- starting hand #1 (id: nju4yl2oojrc)  (No Limit Texas Hold'em) (dealer: ""tz2 @ jinnkMiEa5"") --",2025-06-20T23:16:07.676Z,175046136767600
+"The admin approved the player ""tz2 @ jinnkMiEa5"" participation with a stack of 20.00.",2025-06-20T23:15:51.483Z,175046135148300
+"The player ""tz2 @ jinnkMiEa5"" requested a seat.",2025-06-20T23:15:46.552Z,175046134655200
+"The admin approved the player ""tz @ bcdGuthcbe"" participation with a stack of 20.00.",2025-06-20T23:15:19.829Z,175046131982901
+"The player ""tz @ bcdGuthcbe"" requested a seat.",2025-06-20T23:15:19.829Z,175046131982900
