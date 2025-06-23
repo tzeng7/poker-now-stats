@@ -3,12 +3,17 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Upload from './Upload'
+import StatsTable from './statsTable'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Upload></Upload>
+    <div>
+      <Upload></Upload>
+  
+    </div>
+    
   )
 }
 
