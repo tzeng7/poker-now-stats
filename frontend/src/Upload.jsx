@@ -1,5 +1,7 @@
     import { useEffect, useState } from "react";
     import StatsTable from "./statsTable";
+    import "./Upload.css";
+
     
 
     export default function Upload(){
@@ -37,10 +39,14 @@
         }, [stats]);
 
         return (
-            <div>
-                <input type="file" accept=".csv" onChange={handleFileChange}></input>
-                <input type="submit" onClick={handleUpload}></input>
-                {stats && <StatsTable data={stats}></StatsTable>}
+            <div className='stats'>
+                <div className="upload">
+                     <input className="fileUpload" type="file" accept=".csv" onChange={handleFileChange}></input>
+                     <input type="submit" onClick={handleUpload}></input>
+                </div>
+                <div className="table">
+                    {stats && <StatsTable data={stats}></StatsTable>}
+                </div>
             </div>
             
         )

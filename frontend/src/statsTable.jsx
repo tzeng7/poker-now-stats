@@ -1,3 +1,4 @@
+import './StatsTable.css';
 export default function StatsTable({data}) {
     if (!data || typeof data !== "object") return null;
     return (
