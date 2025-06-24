@@ -35,57 +35,30 @@ def process_csv(file):
             game.hands.append(hand)
                 
         elif "posts a small blind" in row or "posts a big blind" in row:
-            # index = row.index("@")
             player_name = get_user(row)
-            hand.add_player(player_name, False, False, False)
+            hand.update_player(player_name, False, False, False)
 
         elif pf and "calls" in row:
-            #create method for retrieving player name from row
-            # index = row.index("@")
             player_name = player_name = get_user(row)
 
-
-            #add if new player calls blinds or open raise - vpip true
-            if not hand.player_in_hand(player_name):
-                hand.add_player(player_name, True, False, False)
-                    
-            #add if player already registered calls blinds or new action - vpip true
-            else:
-                hand.update_player(player_name, True, False, False)
-
+            hand.update_player(player_name, True, False, False)
+            
         elif pf and "raises" in row:
-
-            # index = row.index("@")
             player_name = get_user(row)
-
                 
             #check if 3bet
-            if raises_pre == 1:
-                    
-                if hand.player_in_hand(player_name):
-                    hand.update_player(player_name, True, True, False)
-                else:
-                    hand.add_player(player_name, True, True, False)
-                
-            #add if open and vpip
-            elif not raises_pre and not hand.player_in_hand(player_name):
-                hand.add_player(player_name, True, False, True)
-                
-            #case: player limp 3b
-            #maybe look into just making add and update the same - in add method, check if player exists first; if yes then update
-            elif not raises_pre and hand.player_in_hand(player_name):
+            if raises_pre == 1:     
+                hand.update_player(player_name, True, True, False)
+            elif not raises_pre:
                 hand.update_player(player_name, True, False, True)
-                    
+                  
             raises_pre += 1
         elif pf and "folds" in row:
-            # index = row.index("@")
             player_name = get_user(row)
 
-                
-            #add if player not registered folds; do nothing if player was registered and folds
-            if not hand.player_in_hand(player_name):
-                hand.add_player(player_name, False, False, False)
-            # end preflop stat collection
+            hand.update_player(player_name, False, False, False)            
+            
+        # end preflop stat collection
         elif "Flop" in row:
             pf = False
 

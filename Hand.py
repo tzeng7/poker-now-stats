@@ -13,13 +13,17 @@ class Hand:
         for player in self.players.values():
             print(f'Hand Number {self.number}: Player Name: {player.player_name} VPIP: {player.vpip} 3B: {player.three_bet} PFT: {player.pfr} ')
 
-    def add_player(self, name, vpip, three_bet, pfr):
+    # def add_player(self, name, vpip, three_bet, pfr):
 
-        self.players[name] = Player(name, vpip, three_bet, pfr)
+    #     self.players[name] = Player(name, vpip, three_bet, pfr)
 
     def update_player(self, name, vpip=False, three_bet=False, pfr=False):
         player = self.players.get(name)
-        if player:
+        #add player if not registered in hand already
+        if not player:
+            self.players[name] = Player(name, vpip, three_bet, pfr)
+        #update player if already registered in hand
+        elif player:
             if vpip:
                 player.vpip = vpip
             if three_bet:
