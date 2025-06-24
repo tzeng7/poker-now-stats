@@ -1,11 +1,12 @@
 import './StatsTable.css';
+
 export default function StatsTable({data}) {
     if (!data || typeof data !== "object") return null;
     return (
         <table>
             <tbody>
                 <tr>
-                    <th>Player</th>
+                    <th className='user'>Player</th>
                     <th>Hands Played</th>
                     <th>VPIP Count</th>
                     <th>VPIP%</th>
@@ -18,7 +19,7 @@ export default function StatsTable({data}) {
                     const threeBetPercent = hands_played ? ((three_bet_count / hands_played) * 100).toFixed(1) : "0.0";
                     return (
                     <tr key={player}>
-                        <td>{player}</td>
+                        <td className='user'>{player}</td>
                         <td>{hands_played}</td>
                         <td>{vpip_count}</td>
                         <td>{vpipPercent}</td>

@@ -6,6 +6,9 @@ from Player import Player
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
+def get_user(row) -> str:
+    index = row.index("@")
+    return row[0:index].strip().strip('"')
 
 def process_csv(file):
     pf = True
@@ -32,14 +35,15 @@ def process_csv(file):
             game.hands.append(hand)
                 
         elif "posts a small blind" in row or "posts a big blind" in row:
-            index = row.index("@")
-            player_name = row[0:index].strip().strip('"')
+            # index = row.index("@")
+            player_name = get_user(row)
             hand.add_player(player_name, False, False)
 
         elif pf and "calls" in row:
             #create method for retrieving player name from row
-            index = row.index("@")
-            player_name = row[0:index].strip().strip('"')
+            # index = row.index("@")
+            player_name = player_name = get_user(row)
+
 
             #add if new player calls blinds or open raise - vpip true
             if not hand.player_in_hand(player_name):
@@ -51,8 +55,9 @@ def process_csv(file):
 
         elif pf and "raises" in row:
 
-            index = row.index("@")
-            player_name = row[0:index].strip().strip('"')
+            # index = row.index("@")
+            player_name = get_user(row)
+
                 
             #check if 3bet
             if raises_pre == 1:
@@ -72,8 +77,9 @@ def process_csv(file):
                     
             raises_pre += 1
         elif pf and "folds" in row:
-            index = row.index("@")
-            player_name = row[0:index].strip().strip('"')
+            # index = row.index("@")
+            player_name = get_user(row)
+
                 
             #add if player not registered folds; do nothing if player was registered and folds
             if not hand.player_in_hand(player_name):

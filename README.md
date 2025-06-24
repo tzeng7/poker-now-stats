@@ -13,5 +13,7 @@
   - limp -> 3b (update player)
   - straight 3b (add player)
 
+### PFR (preflop raise)
 
-``player can``
+- first raise preflop
+- player will always be new when making first pfr
