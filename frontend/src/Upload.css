@@ -1,12 +1,123 @@
-.stats {
-    width: 100%;
-    padding-top: 10%;
-    text-align: center;
-    padding-bottom: 10%;
+.upload-container {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 1rem;
 }
 
-.table {
-    padding-top: 2%;
-
+.upload-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  color: var(--text-dark);
 }
 
+.upload-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.upload-card h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-green);
+}
+
+.upload-description {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.file-input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.file-input-label {
+  display: block;
+  cursor: pointer;
+}
+
+.file-input-hidden {
+  display: none;
+}
+
+.file-input-button {
+  display: block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.file-input-button:hover {
+  border-color: var(--primary-green);
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  color: var(--dark-green);
+}
+
+.error-message {
+  color: var(--accent-red);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.analyze-button {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--dark-green) 100%);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.analyze-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.analyze-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.results-container {
+  width: 100%;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.results-header h2 {
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+
+.reset-button {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--text-light);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.6rem 1.25rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.5);
+}

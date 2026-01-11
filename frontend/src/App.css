@@ -1,11 +1,65 @@
-html, body, #root {
-  width: 100%;
-  height: 100%;
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-.appDiv {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+
+.header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 3rem;
+  color: var(--accent-gold);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+  color: var(--text-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.05em;
+}
+
+.tagline {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+.main-content {
+  flex: 1;
   display: flex;
   justify-content: center;
+  padding: 1rem;
+}
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+}
+
+.suits {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.suits span:nth-child(1),
+.suits span:nth-child(4) {
+  color: var(--text-light);
+}
+
+.suits span:nth-child(2),
+.suits span:nth-child(3) {
+  color: var(--accent-red);
 }
